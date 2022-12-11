@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB07420A29256D4F00AE277B /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB07420929256D4F00AE277B /* GameVC.swift */; };
+		DB1028F22926CE6600C7632A /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1028F12926CE6600C7632A /* HeroCell.swift */; };
 		DB7C22982917CA8F0048EA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C22972917CA8F0048EA73 /* AppDelegate.swift */; };
 		DB7C229A2917CA8F0048EA73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C22992917CA8F0048EA73 /* SceneDelegate.swift */; };
-		DB7C229C2917CA8F0048EA73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C229B2917CA8F0048EA73 /* ViewController.swift */; };
 		DB7C229F2917CA8F0048EA73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7C229D2917CA8F0048EA73 /* Main.storyboard */; };
 		DB7C22A12917CA900048EA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB7C22A02917CA900048EA73 /* Assets.xcassets */; };
 		DB7C22A42917CA900048EA73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7C22A22917CA900048EA73 /* LaunchScreen.storyboard */; };
 		DB7C22AF2917CA900048EA73 /* QUOTETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C22AE2917CA900048EA73 /* QUOTETests.swift */; };
 		DB7C22B92917CA900048EA73 /* QUOTEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C22B82917CA900048EA73 /* QUOTEUITests.swift */; };
 		DB7C22BB2917CA900048EA73 /* QUOTEUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C22BA2917CA900048EA73 /* QUOTEUITestsLaunchTests.swift */; };
+		DB7C22C82917CC020048EA73 /* MainScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C22C72917CC020048EA73 /* MainScreenVC.swift */; };
+		DB7C22CA2917E29D0048EA73 /* ChangeLvlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C22C92917E29D0048EA73 /* ChangeLvlVC.swift */; };
+		DBDB1074293276E700000349 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDB1073293276E700000349 /* Hero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB07420929256D4F00AE277B /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
+		DB1028F12926CE6600C7632A /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
 		DB7C22942917CA8F0048EA73 /* QUOTE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QUOTE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7C22972917CA8F0048EA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB7C22992917CA8F0048EA73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB7C229B2917CA8F0048EA73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB7C229E2917CA8F0048EA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB7C22A02917CA900048EA73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB7C22A32917CA900048EA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		DB7C22B42917CA900048EA73 /* QUOTEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QUOTEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7C22B82917CA900048EA73 /* QUOTEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QUOTEUITests.swift; sourceTree = "<group>"; };
 		DB7C22BA2917CA900048EA73 /* QUOTEUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QUOTEUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DB7C22C72917CC020048EA73 /* MainScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenVC.swift; sourceTree = "<group>"; };
+		DB7C22C92917E29D0048EA73 /* ChangeLvlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeLvlVC.swift; sourceTree = "<group>"; };
+		DBDB1073293276E700000349 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +109,11 @@
 			children = (
 				DB7C22972917CA8F0048EA73 /* AppDelegate.swift */,
 				DB7C22992917CA8F0048EA73 /* SceneDelegate.swift */,
-				DB7C229B2917CA8F0048EA73 /* ViewController.swift */,
+				DB7C22C72917CC020048EA73 /* MainScreenVC.swift */,
+				DB7C22C92917E29D0048EA73 /* ChangeLvlVC.swift */,
+				DB07420929256D4F00AE277B /* GameVC.swift */,
+				DB1028F12926CE6600C7632A /* HeroCell.swift */,
+				DBDB1073293276E700000349 /* Hero.swift */,
 				DB7C229D2917CA8F0048EA73 /* Main.storyboard */,
 				DB7C22A02917CA900048EA73 /* Assets.xcassets */,
 				DB7C22A22917CA900048EA73 /* LaunchScreen.storyboard */,
@@ -258,8 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB7C229C2917CA8F0048EA73 /* ViewController.swift in Sources */,
+				DB7C22C82917CC020048EA73 /* MainScreenVC.swift in Sources */,
+				DB7C22CA2917E29D0048EA73 /* ChangeLvlVC.swift in Sources */,
 				DB7C22982917CA8F0048EA73 /* AppDelegate.swift in Sources */,
+				DB1028F22926CE6600C7632A /* HeroCell.swift in Sources */,
+				DBDB1074293276E700000349 /* Hero.swift in Sources */,
+				DB07420A29256D4F00AE277B /* GameVC.swift in Sources */,
 				DB7C229A2917CA8F0048EA73 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +461,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,6 +490,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
