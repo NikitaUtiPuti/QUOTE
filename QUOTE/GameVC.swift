@@ -22,48 +22,48 @@ class GameVC: UIViewController, UICollectionViewDelegateFlowLayout, UICollection
     
     @IBOutlet weak var heroQuoteLabel: UILabel!
     
-    let allHeroes = [Hero(name: "axe", quotes: ["Kiss piss", "Axe is back", "Culling"]),
-                     Hero(name: "obsidian_destroyer", quotes: ["Destroy", "You awful", "Catch if you can"]),
-                     Hero(name: "dark_willow", quotes: ["willow", "pillow", "sealow"]),
-                     Hero(name: "alchemist", quotes: ["Alachemy!", "My friend!", "Gold!"])]
+    let allHeroes = [Hero(name: "abaddon", quotes: ["Тот, кто крещён в купели Аверно видит смерть иначе.", "Завеса жизни и смерти теперь не столь                      таинственна.", "Узрите продолжателя династии Аверно и трепещите!"]),
+                     Hero(name: "alchemist", quotes: ["Если битва - это цепная реакция, то я ее катализатор!", "Не тряси, а то взорвёмся!", "Коктейля не желаете?"]),
+                     Hero(name: "ancient_apparition", quotes: ["Ancient chill!", "Cold save us!", "You'll grow colder but no older."]),
+                     Hero(name: "antimage", quotes: ["Время магии сочтено.", "Магии не знать победы.", "Колдовское отродье."]),
+                     Hero(name: "arc_warden", quotes: ["Материя отделилась от своей задуманной формы, надо соединить их вновь.", "Зет – это Самость, а Самость – это Зет.", "Жизнь - тюрьма. Встречай свободу."]),
+                     Hero(name: "axe", quotes: ["Taste my blade!", "You get nothing. Good day, sir!", "Axe grows stronger!"]),
+                     Hero(name: "bane", quotes: ["I bring nightmares.", "See you in your dreams.", "Rainada har rainada har rainada har seyada ha…"]),
+                     Hero(name: "batrider", quotes: ["Тебя подвезти?", "Я прилетел из преисподней — выучил пару новых трюков!", "Эй, мышка! Лети!"]),
+                     Hero(name: "beastmaster", quotes: ["Nature, red in tooth and talon.", "My beasts and I hunt our prey.", "Unleash the beasts of war."]),
+                     Hero(name: "bloodseeker", quotes: ["Я проливаю кровь во имя Бескожих Близнецов.", "Кровь крови рознь!", "Подставляй вены..."]),
+                     Hero(name: "bounty_hunter", quotes: ["Преступник не уйдет от законного возмездия.", "За их головы назначена награда.", "Я беру этот контракт."]),
+                     Hero(name: "brewmaster", quotes: [" Raise em high, friends!", "What kind of pub is this?", "What's wrong? Can't hold your liquor? . . Hello?"])
+                     
+                                                                                                
     
-    let centaurWarrunerQuotes = ["Колбаса не пахнет","Беги со всех ног","Отсоси потом проси"]
-    let pugnaQuotes = ["Красный наш зеленый общий","Давай побеспределим","Поехали пагораду ежже"]
-    let outworldDestroyerQuotes = ["Я дестройер!","Заключу тебя в тюрьму","Убегай глупец!"]
-    let kunkkaQuotes = ["Сила морей!", "Сокрушу тебя водой", "Океан на моей стороне"]
-//    
-    let heroPictures = ["pugnaPic", "centaurWarrunerPic", "outworldDestroyerPic", "kunkkaPic"]
     
-    func createQuiz() {
-        
-        var fourHeroPics = [heroPictures.randomElement()]
-        
-        
-        while fourHeroPics.count != 4 {
-            fourHeroPics.append(heroPictures.randomElement())
-        }
-        
-        
-    }
-//    
-//    let text = "Колбаса не пахнет"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ]
     
     var items = 4
     let itemsPerRow: CGFloat = 2
     let sectionInesrts = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
     
-//    func checkAnswer() -> Bool {
-//
-//        let allQuotes = [centaurWarrunerQuotes, pugnaQuotes]
-//
-//        allQuotes.contains(text) {
-//        if centaurWarrunerQuotes.contains(text) {
-//            print("Фраза кентавра")
-//            return true
-//        }   else {print("Фраза пугны") }
-//        return false
-//    }
-
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items
     }
@@ -72,27 +72,20 @@ class GameVC: UIViewController, UICollectionViewDelegateFlowLayout, UICollection
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "heroCell", for: indexPath) as! HeroCell
         
-        
-//        cell.heroImageView.bounds = cell.contentView.bounds
-//        cell.heroImageView.frame = cell.contentView.frame
-//        cell.heroImageView.contentMode = .scaleToFill
-        
-        
         DispatchQueue.main.async {
-            
+        
         cell.heroImageView.frame = cell.contentView.frame
         cell.heroImageView.contentMode = .scaleToFill
-            
-        guard self.allHeroes.last?.heroImage != nil else {return}
+    
         let heroes = self.allHeroes[indexPath.item]
         let image = heroes.heroImage
-        
-
+            
         cell.heroImageView.image = image
-       
-        
+            if cell.heroImageView.image == UIImage() {
+                cell.isHidden = true
+                collectionView.reloadData()
+            } else { cell.isHidden = false }
         }
-        
         return cell
     }
     
@@ -100,12 +93,9 @@ class GameVC: UIViewController, UICollectionViewDelegateFlowLayout, UICollection
         return 1
     }
     
-
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         collectionView.layer.position = CGPoint(x: view.center.x, y: view.center.y)
-//        collectionView.frame.size.width = view.bounds.width - 85
-//        collectionView.frame.size.height = view.bounds.height / 2 - 25
         
         let paddingWidth = sectionInesrts.left * (itemsPerRow + 1)
         let availableWidth = collectionView.frame.width - paddingWidth
