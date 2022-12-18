@@ -8,7 +8,16 @@
 import Foundation
 import UIKit
 
-class Hero {
+class Hero: Hashable & Equatable {
+    
+    static func == (lhs: Hero, rhs: Hero) -> Bool {
+        return lhs.heroName == rhs.heroName        
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(heroName) 
+    }
+  
 
     var heroName = ""
     var heroQuotes = [String]()

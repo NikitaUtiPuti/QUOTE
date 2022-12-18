@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DB07420A29256D4F00AE277B /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB07420929256D4F00AE277B /* GameVC.swift */; };
 		DB1028F22926CE6600C7632A /* HeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1028F12926CE6600C7632A /* HeroCell.swift */; };
+		DB6EE6262948FD8E005F4240 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6EE6252948FD8E005F4240 /* Quiz.swift */; };
 		DB7C22982917CA8F0048EA73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C22972917CA8F0048EA73 /* AppDelegate.swift */; };
 		DB7C229A2917CA8F0048EA73 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7C22992917CA8F0048EA73 /* SceneDelegate.swift */; };
 		DB7C229F2917CA8F0048EA73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB7C229D2917CA8F0048EA73 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		DB07420929256D4F00AE277B /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		DB1028F12926CE6600C7632A /* HeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCell.swift; sourceTree = "<group>"; };
+		DB6EE6252948FD8E005F4240 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		DB7C22942917CA8F0048EA73 /* QUOTE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QUOTE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB7C22972917CA8F0048EA73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB7C22992917CA8F0048EA73 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				DB7C22C72917CC020048EA73 /* MainScreenVC.swift */,
 				DB7C22C92917E29D0048EA73 /* ChangeLvlVC.swift */,
 				DB07420929256D4F00AE277B /* GameVC.swift */,
+				DB6EE6252948FD8E005F4240 /* Quiz.swift */,
 				DB1028F12926CE6600C7632A /* HeroCell.swift */,
 				DBDB1073293276E700000349 /* Hero.swift */,
 				DB7C229D2917CA8F0048EA73 /* Main.storyboard */,
@@ -276,6 +279,7 @@
 				DB1028F22926CE6600C7632A /* HeroCell.swift in Sources */,
 				DBDB1074293276E700000349 /* Hero.swift in Sources */,
 				DB07420A29256D4F00AE277B /* GameVC.swift in Sources */,
+				DB6EE6262948FD8E005F4240 /* Quiz.swift in Sources */,
 				DB7C229A2917CA8F0048EA73 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
