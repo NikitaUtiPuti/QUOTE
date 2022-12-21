@@ -49,8 +49,8 @@ struct Quiz {
         return quizHeroes
     }
     
-    mutating func checkAnswer(input: String) -> Bool {
-           if(input == getQuote()) {
+    mutating func checkAnswer(input: [String], quote: String) -> Bool {
+        if(input.contains(quote)) {
                score += 1
                return true
            }

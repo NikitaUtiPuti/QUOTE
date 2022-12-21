@@ -29,10 +29,19 @@ class GameVC: UIViewController, UICollectionViewDelegateFlowLayout, UICollection
     let sectionInesrts = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
     
     func quizUpdate() {
+        quiz.removeHeroes()
         let heroes = quiz.getHeroes()
         quizHeroes = heroes
+        heroQuoteLabel.alpha = 1
         heroQuoteLabel.text = quiz.getQuote()
-        
+    }
+    
+    func viewAnimate(ansColor: UIColor) {
+        self.view.backgroundColor = ansColor
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: [.allowUserInteraction], animations: { () -> Void in
+        self.view.backgroundColor = UIColor(red: 1, green: 1, blue: 0, alpha: 1.00)
+            self.heroQuoteLabel.alpha = 0
+        })
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -100,11 +109,19 @@ class GameVC: UIViewController, UICollectionViewDelegateFlowLayout, UICollection
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        _ = Timer.scheduledTimer(withTimeInterval: 0.09, repeats: true) { [self] timer in
+        let heroes = self.quizHeroes[indexPath.item]
+        
+        if (quiz.checkAnswer(input: heroes.heroQuotes, quote: heroQuoteLabel.text!)) {
+            viewAnimate(ansColor: UIColor(red: 0.40, green: 0.87, blue: 0.58, alpha: 1.00))
+                }
+                else {
+                   viewAnimate(ansColor: UIColor(red: 0.85, green: 0.23, blue: 0.34, alpha: 1.00))
+                }
+        
+        _ = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { [self] timer in
             print("timer fired!")
 
             guard quizHeroes.count != 0 else {  timer.invalidate()
-                quiz.removeHeroes()
                 quizUpdate()
                 collectionView.reloadData()
                                                 return }
